@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script type="text/javascript" src="js/base.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/Home.css">
+
+	<title>Home</title>
+</head>
+
+<body>
+	<!-- overhead alert -->
+	<!-- <div class="" style="height: 58px;"> -->
+	<div class="alert alert-dismissible fade show m-0 top-0" role="alert" style="z-index: 1; background-color: linen;">
+		<i class="far fa-bell"></i>&emsp;<strong>Auto-DL</strong> is growing. Lorem ipsum dolor sit amet consectetur
+		adipisicing elit!
+		<a href="#" class="link-secondary">Join In</a>
+		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+	</div>
+	<!-- </div> -->
+
+	<header id="header" class="App-header home-head">
+	</header>
+
+	<main>
+		<svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 1680 40"
+			class="position-relative width-full z-1" style="display: block;">
+			<path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
+		</svg>
+
+		<!-- Intro line -->
+		<section class='flex home-content light-bg' style="min-height: 400px; width: 100%;">
+			<div class='container'>
+				<h2>Build Deep learning models <span style="color: #f72585;">more than 10X faster</span> with <span
+						class="autoDL">Auto-DL</span>.</h2>
+				<p>Building Deep Learning models takes a lot of time. We automate your "meta-work" so that you can focus
+					of building your models without worrying about writing code.</p>
+			</div>
+		</section>
+
+		<!-- version details -->
+		<section class="flex home-content tinted-bg">
+			<div class="container">
+				<h3 class='mb-5'>*latest version details maybe*</h3>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit tenetur quod mollitia id asperiores
+					quae porro ad, architecto officia quaerat reprehenderit in, maiores cupiditate quisquam dolorum
+					dolor placeat quibusdam earum. Delectus, officia atque. Hic, fugit harum voluptate sed veniam
+					adipisci maiores, ab temporibus molestiae quas eos cupiditate repellendus sunt quisquam deleniti
+					iusto quos accusantium totam accusamus ipsa officia? Inventore excepturi in, amet dicta architecto
+					temporibus neque ipsa qui quisquam perferendis. Similique veritatis nam tempore beatae reiciendis
+					ut, magni nisi eligendi modi adipisci laboriosam commodi vitae eaque consectetur alias rerum nemo
+					soluta voluptatum. Saepe aspernatur, vel veritatis ratione esse ea quisquam?</p>
+			</div>
+		</section>
+
+		<!-- demo video -->
+		<section class="home-content dark-bg-content">
+			<div class="container">
+				<h3 class="mb-5">Watch Demo</h3>
+				<div>
+					<span class="flex demo-vid" data-bs-toggle="modal" data-bs-target="#youtubeModal">
+						<img class="img-fluid" src="media/layoutSS.png">
+						<a class="pe-auto btn rounded-circle flex" id="yt-btn"><i class="fas fa-play"></i></a>
+					</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- The Interface -->
+		<section class='home-content tinted-bg'>
+			<div class="container">
+				<h3 class='mb-5'>Our Interface</h3>
+				<div class="flex position-relative" id="interface"
+					style="width: fit-content; margin: 0 auto; color: white;">
+					<img class="img-fluid" src="media/interface.png" alt="Interface" width="800px">
+					<!-- popovers -->
+					<a id="top-right" class="interface-tooltip" tabindex="0" class="btn btn-lg btn-danger" role="button"
+						data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus" title="Title"
+						data-bs-content="And here's some amazing content. It's very engaging. Right?">
+						<i class="fas fa-info-circle"></i>
+					</a>
+					<a id="bottom-right" class="interface-tooltip" tabindex="0" class="btn btn-lg btn-danger"
+						role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus"
+						title="Title" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+						<i class="fas fa-info-circle"></i>
+					</a>
+					<a id="top-left" class="interface-tooltip" tabindex="0" class="btn btn-lg btn-danger" role="button"
+						data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus" title="Title"
+						data-bs-content="And here's some amazing content. It's very engaging. Right?">
+						<i class="fas fa-info-circle"></i>
+					</a>
+					<a id="bottom-left" class="interface-tooltip" tabindex="0" class="btn btn-lg btn-danger"
+						role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus"
+						title="Title" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+						<i class="fas fa-info-circle"></i>
+					</a>
+
+					<!-- toolitips -->
+					<!-- <span id="top-right" class="interface-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom"
+						data-bs-html="true" title="<b>TITLE</b><br/>content"><i class="fas fa-info-circle"></i></span>
+					<span id="bottom-right" class="interface-tooltip" data-bs-toggle="tooltip"
+						data-bs-placement="bottom" data-bs-html="true" title="<b>TITLE</b><br/>content"><i
+							class="fas fa-info-circle"></i></span>
+					<span id="top-left" class="interface-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom"
+						data-bs-html="true" title="<b>TITLE</b><br/>content"><i class="fas fa-info-circle"></i></span>
+					<span id="bottom-left" class="interface-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom"
+						data-bs-html="true" title="<b>TITLE</b><br/>content"><i class="fas fa-info-circle"></i></span> -->
+				</div>
+			</div>
+		</section>
+
+		<!-- features -->
+		<section class='home-content light-bg'>
+			<div class="container">
+				<h3 class='mb-5'>What sets <span class="autoDL">Auto-DL</span> apart</h3>
+				<div>
+					<div class="feat flex row row-cols-1 row-cols-sm-2 row-cols-md-3 gy-5 mt-2">
+						<div class="col">
+							<i class="fas fa-exclamation-circle"></i>
+							<h4>Scalable</h4>
+							<p>Highly scalable as it can be deployed on a single compute system or a cluster</p>
+						</div>
+						<div class="col">
+							<i class="fas fa-exclamation-circle"></i>
+							<h4>Secure</h4>
+							<p>Your data and models' security is our highest priority</p>
+						</div>
+						<div class="col">
+							<i class="fas fa-exclamation-circle"></i>
+							<h4>Intuitive</h4>
+							<p>Strong preference for easy to use, intuitive UX/UI</p>
+						</div>
+						<div class="col">
+							<i class="fas fa-exclamation-circle"></i>
+							<h4>Flexible</h4>
+							<p>Develop DL models in any framework and any programming language</p>
+						</div>
+						<div class="col">
+							<i class="fas fa-exclamation-circle"></i>
+							<h4>Explainable</h4>
+							<p>No more black boxes, understand what the AI model is learning.',
+							</p>
+						</div>
+						<div class="col-12">
+							<a class="dark-btn btn rounded-pill" href="features.html">Learn More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- github section -->
+		<section class='home-content dark-bg-content'>
+			<div class="container">
+				<h3 class='mb-5'>*github related*</h3>
+				<div>
+					<div class="row row-cols-1 row-cols-md-1 row-cols-lg-3">
+						<div class="col">
+							<i class="mb-5 fas fa-exclamation-circle" style="font-size: 4em;"></i>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, animi quo. Magni
+								aliquam fugit ea quam eius, iure quod cum tempore! Consectetur expedita molestias
+								tempore!</p>
+						</div>
+						<div class="col">
+							<i class="mb-5 fas fa-exclamation-circle" style="font-size: 4em;"></i>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, animi quo. Magni
+								aliquam fugit ea quam eius, iure quod cum tempore! Consectetur expedita molestias
+								tempore!</p>
+						</div>
+						<div class="col">
+							<i class="mb-5 fas fa-exclamation-circle" style="font-size: 4em;"></i>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, animi quo. Magni
+								aliquam fugit ea quam eius, iure quod cum tempore! Consectetur expedita molestias
+								tempore!</p>
+						</div>
+						<div class="col-12">
+							<h4>repo stars........</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class='home-content light-bg'>
+			<div class="container">
+				<h3 class='mb-5'>Something</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo nesciunt eos corporis cumque.
+					Maiores non libero corrupti minima voluptate aliquid, consectetur asperiores provident modi eligendi
+					perspiciatis, nam accusantium commodi distinctio. Repellendus necessitatibus, possimus illo neque ex
+					fugiat numquam consequuntur expedita harum dolorum incidunt beatae ratione aliquid aspernatur
+					molestiae perferendis exercitationem rem dicta eos autem, architecto delectus vel. Dolor, quidem.
+					Suscipit, inventore soluta aliquid autem iusto laborum optio! Qui, sunt cumque, blanditiis earum
+					nulla corrupti eius dignissimos vero voluptate praesentium aut dolor minima modi voluptates.
+					Voluptate, qui! Sequi quidem explicabo facilis iste quod! Officia obcaecati impedit explicabo
+					exercitationem, dolorum doloremque?</p>
+			</div>
+		</section>
+
+		<!-- Testinomy Carousel -->
+		<section class='home-content dark-bg-content' style="background-color: transparent !important;">
+			<span></span>
+			<h3 class='mb-5'>What Our Users say</h3>
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="height: 400px">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+						aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+						aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+						aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<!-- <img src="." class="d-block w-100" alt="..." />  -->
+						<div class="carousel-caption">
+							<div class='card'>
+								<!-- <h5 class="qot">"</h5>  -->
+								<p class='testimonial'>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, reiciendis totam
+									aliquam dolore, consequuntur officia ipsam quae molestias velit ad dicta incidunt
+									explicabo, distinctio dolores. Officiis mollitia, error excepturi modi cumque unde
+									nobis aut iste odit distinctio, inventore voluptatibus obcaecati corrupti
+									praesentium id eos, qui cum laboriosam rem dicta est.
+									<br /><br />-Lorem ipsum dolor.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<!-- <img src="." class="d-block w-100" alt="..." />  -->
+						<div class="carousel-caption">
+							<div class='card'>
+								<!-- <h5 class="qot">"</h5>  -->
+								<p class='testimonial'>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, reiciendis totam
+									aliquam dolore, consequuntur officia ipsam quae molestias velit ad dicta incidunt
+									explicabo, distinctio dolores. Officiis mollitia, error excepturi modi cumque unde
+									nobis aut iste odit distinctio, inventore voluptatibus obcaecati corrupti
+									praesentium id eos, qui cum laboriosam rem dicta est.
+									<br /><br />-Lorem ipsum dolor.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<!-- <img src="." class="d-block w-100" alt="..." />  -->
+						<div class="carousel-caption">
+							<div class='card'>
+								<!-- <h5 class="qot">"</h5>  -->
+								<p class='testimonial'>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, reiciendis totam
+									aliquam dolore, consequuntur officia ipsam quae molestias velit ad dicta incidunt
+									explicabo, distinctio dolores. Officiis mollitia, error excepturi modi cumque unde
+									nobis aut iste odit distinctio, inventore voluptatibus obcaecati corrupti
+									praesentium id eos, qui cum laboriosam rem dicta est.
+									<br /><br />-Lorem ipsum dolor.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+					data-bs-slide="prev">
+					<!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>  -->
+					<i class="fas fa-arrow-circle-left"></i>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+					data-bs-slide="next">
+					<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>  -->
+					<i class="fas fa-arrow-circle-right"></i>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</section>
+
+		<!-- newsletter modal -->
+		<div class="modal" id="newsletter-modal" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="row">
+						<div class="col-12 col-sm-6" style="min-height: 30vh;">
+							<div id="news-image"></div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="modal-header text-centergit border-0">
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5 class="modal-title mb-3">** Newsletter **</h5>
+								<p class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ea,
+									sapiente
+									minus officia porro assumenda quia laboriosam asperiores molestias nihil.</p>
+							</div>
+							<div class="modal-footer border-0">
+								<div class="input-group align-self-center row">
+									<input type="text" class="col-12 col-lg-8 form-control"
+										placeholder="Enter Your Email" aria-label="Enter Your Email"
+										aria-describedby="button-addon2" required>
+									<a class="col-12 col-lg-4 btn btn-outline-secondary" type="button"
+										id="button-addon2">Subscribe</a>
+								</div>
+								<!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- youtube demo modal -->
+		<div class="modal fade" id="youtubeModal" tabindex="-1" aria-labelledby="youtubeModalLabel" aria-hidden="true">
+			<div class="flex modal-dialog modal-fullscreen-md-down" style="height: 100%;">
+				<div class="modal-content" style="width: fit-content;">
+					<!-- <div class="modal-header">
+						<h5 class="modal-title" id="youtubeModalLabel">Modal title</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div> -->
+					<button type="button" class="btn btn-dark rounded-circle position-absolute" data-bs-dismiss="modal"
+						style="right: 0; z-index: 1;">
+						<i class="fas fa-times"></i></button>
+					<div class="modal-body">
+						<iframe id="youtubeDemo" width="560" height="315" src="" title="Auto-DL Demo" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+					<!-- <div class="modal-footer">
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer></footer>
+
+	<script type="text/javascript" src="js/home.js"></script>
+	<script type="text/javascript" src="js/pt.min.js"></script>
+	<script type="text/javascript" src="js/canvas.js"></script>
+
+</body>
+
+</html>
